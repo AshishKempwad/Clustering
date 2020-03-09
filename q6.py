@@ -37,3 +37,16 @@ class Cluster:
             centroids=np.array([vectorized_list[cluster_labels == i].mean(0) for i in range(self.k)])
         return cluster_labels
     
+    
+    
+    
+    
+    
+    #The above code can be run by the code given below :-
+    '''
+    
+from q6 import Cluster as cl
+cluster_algo = cl()
+# You will be given path to a directory which has a list of documents. You need to return a list of cluster labels for those documents
+predictions = cluster_algo.cluster('./Datasets/q6/') 
+'''
